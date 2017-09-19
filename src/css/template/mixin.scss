@@ -1,0 +1,22 @@
+//@作者：吕岳阳
+//@mail：975794403@qq.com
+
+
+@import "function";
+@import "var";
+
+//多行溢出省略号
+@mixin lineclamp($number:2){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $number;
+  overflow: hidden;
+}
+@mixin refresh($width){
+    color: $main_color;
+    display: inline-block;
+    width: $width;
+    height: $width;
+    background: url("./common/img/refresh.svg") no-repeat center center;
+    background-size: 100%;
+}

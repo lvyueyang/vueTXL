@@ -1,0 +1,61 @@
+//@作者：吕岳阳
+//@mail：975794403@qq.com
+
+@import "function";
+@import "var";
+@import "mixin";
+
+//普通三栏式
+.header-search{
+  height:px2rem(100px);
+  nav{
+    position: fixed;
+    z-index:100;
+    height:px2rem(100px);
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    background-color: $main_color;
+    color: #ffffff;
+    font-size: px2rem(30px);
+    align-content:center;
+    padding: 0 0 0 px2rem(20px);
+    .title{
+      flex: 1;
+      display: flex;
+      align-items:center;
+    }
+    .icon{
+      height: 100%;
+      display: flex;
+      align-items:center;
+      cursor: pointer;
+      padding:0 px2rem(20px);
+    }
+    i{
+      font-size: px2rem(35px);
+    }
+    .icon-zhengque{
+      position: relative;
+      top: 3px;
+    }
+    .search{
+      display: flex;
+      width: 100%;
+      input{
+        flex: 1;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: #fff;
+        font-size: px2rem(30px);
+        padding-left:px2rem(20px);
+        &::-webkit-input-placeholder{
+          color: #ddd;
+        }
+      }
+    }
+  }
+}

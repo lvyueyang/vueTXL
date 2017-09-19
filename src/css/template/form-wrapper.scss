@@ -1,0 +1,62 @@
+//@作者：吕岳阳
+//@mail：975794403@qq.com
+
+@import "function";
+@import "var";
+@import "mixin";
+
+.form-wrapper{
+  padding: 0 px2rem(30px);
+  background-color: #fff;
+  &.add{
+    min-height: 100vh;
+    margin-top:px2rem(-490px);
+    padding-top:px2rem(490px);
+  }
+  li{
+    display: flex;
+    font-size: px2rem(32px);
+    &.bonone{
+      border-bottom:none;
+    }
+    i{
+      flex: 0 0 px2rem(65px);
+      height:px2rem(65px);
+      color: #969696;
+      font-size: px2rem(40px);
+      margin-top:px2rem(25px);
+      &.label{
+        font-style: normal;
+        margin-top:px2rem(30px);
+        font-size: px2rem(30px);
+        padding-left:px2rem(10px);
+      }
+    }
+    .inp{
+      padding-left:px2rem(40px);
+    }
+    input,select,.cont{
+      height:px2rem(100px);
+      line-height:px2rem(100px);
+      width:px2rem(510px);
+      border: none;
+      background-color: transparent;
+      border-bottom:1px solid #ddd;
+      outline:none;
+      transition: all .2s;
+      font-size: px2rem(30px);
+      appearance:none;
+      &:focus{
+        border-bottom:1px solid $main_color;
+      }
+    }
+    .cont{
+      height: auto;
+      line-height: 1.4;
+      min-height:px2rem(100px);
+      display: flex;
+      align-items:center;
+      width:px2rem(560px);
+    }
+  }
+}

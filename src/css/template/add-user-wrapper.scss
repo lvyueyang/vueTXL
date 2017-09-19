@@ -1,0 +1,44 @@
+//@作者：吕岳阳
+//@mail：975794403@qq.com
+
+@import "function";
+@import "var";
+@import "mixin";
+
+.add-user-wrapper {
+  position: relative;
+  z-index: 10;
+  height: px2rem(390px);
+  background-color: $main_color;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+  .img-file {
+    position: relative;
+    width: px2rem(210px);
+    height: px2rem(210px);
+    border-radius: 50%;
+    background: #fff url("./assets/img/zxj.svg") no-repeat center center;
+    input{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .username{
+    width: 100%;
+    font-size: px2rem(35px);
+    color: #ffffff;
+    text-align: center;
+    margin-top:px2rem(-50px);
+  }
+}

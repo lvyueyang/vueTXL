@@ -1,0 +1,24 @@
+//@作者：吕岳阳
+//@mail：975794403@qq.com
+
+@import "function";
+@import "var";
+@import "mixin";
+
+.sidebar{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width:px2rem(55px);
+  height: 100%;
+  text-align: center;
+  padding-top:px2rem(120px);
+  li{
+    width: 100%;
+    height:px2rem(45px);
+    line-height:px2rem(45px);
+    &.active{
+      color: #007aff;
+    }
+  }
+}

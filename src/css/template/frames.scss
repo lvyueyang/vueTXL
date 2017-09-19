@@ -1,0 +1,36 @@
+//@作者：吕岳阳
+//@mail：975794403@qq.com
+
+@import "function";
+@import "var";
+@import "mixin";
+
+
+//旋转无限循环
+@keyframes loadingRotate{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+//点击后背景色渐无
+@keyframes bgFade{
+  0%{
+    background: rgba(36, 207, 95, 0.1);
+
+  }
+  100%{
+    background: rgba(36, 207, 95, 0);
+  }
+}
+
+//渐显过渡
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
