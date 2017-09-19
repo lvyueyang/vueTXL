@@ -3,7 +3,7 @@
     <div class="header-search" ref="headerSearch">
       <nav>
         <div class="icon" @click="$router.go(-1)"><i class="iconfont icon-houtui"></i></div>
-        <div class="title">&emsp;新增联系人</div>
+        <div class="title" >&emsp;{{title}}</div>
         <div class="icon" @click="submit"><i class="iconfont icon-zhengque"></i></div>
       </nav>
     </div>
@@ -103,6 +103,7 @@
     data() {
       return {
         type: 'add',
+        title: '新增联系人',
         id: '',
         info: {
           address: "",
@@ -131,11 +132,13 @@
       this.type = type;
       this.id = this.$route.query.id;
       if (type === 'edit') {
+        this.title = '修改联系人';
         Api.getdetail(this.id).then(res => {
           this.info = res._serverData;
           this.getcity(res._serverData.area);
         })
       }else{
+        this.title = '新增联系人';
         this.info.area = '北京市';
         this.getcity('北京市');
         this.info.city = this.city[0].citysName;
