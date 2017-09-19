@@ -1,4 +1,7 @@
 # VUE+LeanCloud 通讯录
+[预览地址](https://lvyueyang.github.io/vueTXL/demo/index.html "预览地址")
+
+![](https://i.imgur.com/013n4hi.png)
 
 > vue通讯录
 
